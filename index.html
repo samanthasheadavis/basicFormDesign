@@ -11,7 +11,7 @@
     </header>
 
     <main>
-      <form action="" method="post">
+      <form action="http://requestb.in/1g7xkp11" method="post">
 
   <!-- Basic Info Fieldset -->
 
@@ -20,15 +20,15 @@
 
         <!-- Name -->
             <label for="fullName">Full Name</label>
-            <input for id="fullName" type="text" placeholder="Luke Skywalker" required>
+            <input for id="fullName" name="fullName" type="text" placeholder="Luke Skywalker" required>
 
         <!-- Profile Pic -->
             <label for="profilePic">Profile Pic</label>
-            <input for id="profilePic" type="file" accept="image/*">
+            <input for id="profilePic" name="profilePic" type="file" accept="image/*">
 
         <!-- Email -->
             <label for="email">Email</label>
-            <input for id="email" type="email" placeholder="luke@sky.com" required>
+            <input for id="email" name="email" type="email" placeholder="luke@sky.com" required>
 
         <!-- Side -->
             <legend class="legendBold">Side:</legend>
@@ -39,7 +39,7 @@
 
           <!-- Origin Story -->
             <label for="originStory">Origin Story</label>
-            <textarea id="originStory" rows="5" cols="40" required></textarea>
+            <textarea id="originStory" name="originStory" rows="5" cols="40" required></textarea>
 
         </fieldset>
 
@@ -50,7 +50,7 @@
 
           <!-- Lightsaber Color -->
           <label for="lightsaberColor">Lightsaber Color</label>
-          <select id="lightsaberColor">
+          <select id="lightsaberColor" name="lightsaberColor">
             <option>Select Color</option>
             <option>Blue</option>
             <option>Red</option>
@@ -60,32 +60,32 @@
             <!-- Levitate -->
 
             <label for="levitate">How many objects can you levitate at once?</label>
-            <input type="number" id="levitate" min="0" max="5000">
+            <input id="levitate" name="levitate" type="number" min="0" max="5000">
 
             <!-- Ability -->
             <label for="ability">Favorite Ability</label>
-            <input for id="ability" type="text" placeholder="precognition">
+            <input for id="ability" name="ability" type="text" placeholder="precognition">
 
             <!-- Pilot Experience -->
             <legend class="legendBold">Pilot Experience</legend>
 
             <label style="display: inline" for="speeder">Speeder</label>
-            <input type="checkbox" value="speeder">
+            <input type="checkbox" name="speeder" value="speeder">
 
             <label style="display: inline" for="transport">Transport</label>
-            <input type="checkbox" value="transport">
+            <input type="checkbox" name="transport" value="transport">
 
             <label style="display: inline" for="xwing">X-wing</label>
-            <input type="checkbox" value="xwing">
+            <input type="checkbox" name="xwing" value="xwing">
 
             <label style="display: inline" for="tiefighter">TIE Fighter</label>
-            <input type="checkbox" value="tiefighter">
+            <input type="checkbox" name="tiefighter" value="tiefighter">
 
             <label style="display: inline" for="starship">Starship</label>
-            <input type="checkbox" value="starship">
+            <input type="checkbox" name="starship" value="starship">
 
             <label style="display: inline" for="bantha">Bantha</label>
-            <input type="checkbox" value="bantha">
+            <input type="checkbox" name="bantha" value="bantha">
 
           </fieldset>
 
@@ -96,19 +96,19 @@
 
             <!-- Mentor -->
               <label for="mentor">Desired Mentor</label>
-              <input for id="mentor" type="text" placeholder="Yoda">
+              <input for id="mentor" name="mentor" type="text" placeholder="Yoda">
 
             <!-- App Date -->
               <label for="appdate">Application Date</label>
-              <input for id="appdate" type="date" placeholder="mm/dd/yyyy" required>
+              <input for id="appdate" name="appdate" type="date" placeholder="mm/dd/yyyy" required>
 
             <!-- Password -->
               <label for="password">Application Password</label>
-              <input for id="password" type="text" required>
+              <input for id="password" name="password" type="text" required>
 
             <!-- Dark Side -->
               <label for="darkSide">How do you get to the darkside?</label>
-              <textarea id="darkSide" rows="5" cols="40"></textarea>
+              <textarea id="darkSide" name="darkSide" rows="5" cols="40"></textarea>
 
             <!-- Buttons -->
 
