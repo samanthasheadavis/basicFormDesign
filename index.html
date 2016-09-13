@@ -1,8 +1,123 @@
-<html>
-<head>
-</head>
-<body>
-  <p>
-  </p>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Force User Signup Form</title>
+    <link rel="stylesheet", type="text/css", href="main.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Force User Signup Form</h1>
+    </header>
+
+    <main>
+      <form action="" method="post">
+
+  <!-- Basic Info Fieldset -->
+
+        <fieldset>
+          <legend>Basic Info</legend>
+
+        <!-- Name -->
+            <label for="fullName">Full Name</label>
+            <input for id="fullName" type="text" placeholder="Luke Skywalker" required>
+
+        <!-- Profile Pic -->
+            <label for="profilePic">Profile Pic</label>
+            <input for id="profilePic" type="file" accept="image/*">
+
+        <!-- Email -->
+            <label for="email">Email</label>
+            <input for id="email" type="email" placeholder="luke@sky.com" required>
+
+        <!-- Side -->
+            <legend class="legendBold">Side:</legend>
+
+            <input type="radio" name="side" value="light" style="display: inline" checked> Light
+
+            <input type="radio" name="side" value="dark" style="display: inline" checked> Dark
+
+          <!-- Origin Story -->
+            <label for="originStory">Origin Story</label>
+            <textarea id="originStory" rows="5" cols="40" required></textarea>
+
+        </fieldset>
+
+    <!-- Abilities Fieldset -->
+
+        <fieldset>
+          <legend>Abilities</legend>
+
+          <!-- Lightsaber Color -->
+          <label for="lightsaberColor">Lightsaber Color</label>
+          <select id="lightsaberColor">
+            <option>Select Color</option>
+            <option>Blue</option>
+            <option>Red</option>
+            <option>Green</option>
+            <option>Purple</option>
+          </select>
+            <!-- Levitate -->
+
+            <label for="levitate">How many objects can you levitate at once?</label>
+            <input type="number" id="levitate" min="0" max="5000">
+
+            <!-- Ability -->
+            <label for="ability">Favorite Ability</label>
+            <input for id="ability" type="text" placeholder="precognition">
+
+            <!-- Pilot Experience -->
+            <legend class="legendBold">Pilot Experience</legend>
+
+            <label style="display: inline" for="speeder">Speeder</label>
+            <input type="checkbox" value="speeder">
+
+            <label style="display: inline" for="transport">Transport</label>
+            <input type="checkbox" value="transport">
+
+            <label style="display: inline" for="xwing">X-wing</label>
+            <input type="checkbox" value="xwing">
+
+            <label style="display: inline" for="tiefighter">TIE Fighter</label>
+            <input type="checkbox" value="tiefighter">
+
+            <label style="display: inline" for="starship">Starship</label>
+            <input type="checkbox" value="starship">
+
+            <label style="display: inline" for="bantha">Bantha</label>
+            <input type="checkbox" value="bantha">
+
+          </fieldset>
+
+      <!-- Application info fieldset -->
+
+          <fieldset>
+            <legend>Application Info</legend>
+
+            <!-- Mentor -->
+              <label for="mentor">Desired Mentor</label>
+              <input for id="mentor" type="text" placeholder="Yoda">
+
+            <!-- App Date -->
+              <label for="appdate">Application Date</label>
+              <input for id="appdate" type="date" placeholder="mm/dd/yyyy" required>
+
+            <!-- Password -->
+              <label for="password">Application Password</label>
+              <input for id="password" type="text" required>
+
+            <!-- Dark Side -->
+              <label for="darkSide">How do you get to the darkside?</label>
+              <textarea id="darkSide" rows="5" cols="40"></textarea>
+
+            <!-- Buttons -->
+
+              <label>
+              <input type="submit" value="Apply" style="display: inline-block">
+              <button type="reset" value="Start Over" style="display: inline-block">Start Over</button>
+            </label>
+          </fieldset>
+
+    </main>
+  </body>
 </html>

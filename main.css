@@ -1,0 +1,27 @@
+label {
+  font-weight: bold;
+}
+
+.legendBold {
+  font-weight: bold;
+}
+
+fieldset {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+}
+
+input, label, textarea, select{
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type=checkbox] {
+  display: inline;
+}
+
+input[type=submit], button {
+  background-color: lightblue;
+  border-radius: 5px;
+}
